@@ -1,0 +1,15 @@
+import math
+
+def calculate_pool_area(length, width):
+    try:
+        area = length * width
+        return round(area, 2)  # Rounding area to 2 decimal places
+    except TypeError:
+        return "Invalid input. Please provide numerical values for length and width."
+
+# Example usage:
+length = float(input("Enter the length of the pool (in meters): "))
+width = float(input("Enter the width of the pool (in meters): "))
+
+pool_area = calculate_pool_area(length, width)
+print(f"The area of the pool is {pool_area} square meters.")
